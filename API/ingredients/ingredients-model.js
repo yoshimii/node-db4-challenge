@@ -12,5 +12,3 @@ function getShoppingList(id) {
       .where('shopping-list.recipes_id', '=', id)
       .select('ingredients.ingredient_name', 'ingredients.qty', 'recipes.recipe_name')
 }
-
-
