@@ -1,11 +1,11 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('shopping-list').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {recipe_id: 1, ingredient_id: 1},
+      return knex('shopping-list').insert([
+        {recipes_id: 1, ingredients_id: 1},
 
       ]);
     });
